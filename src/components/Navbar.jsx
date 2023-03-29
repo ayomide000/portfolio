@@ -2,6 +2,7 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useState } from 'react'
+import { Link } from 'react-scroll'
 
 const style = {
     nav: `fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300`,
@@ -31,11 +32,21 @@ const Navbar = () => {
         
         {/* menu */}
             <ul className={style.menu}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Works</li>
-                <li>Contact</li>
+                <li>
+                    <Link  to="home" smooth={true} duration={500}> Home</Link>
+                </li>
+                <li>
+                    <Link  to="about" smooth={true} duration={500}> About</Link>
+                </li>
+                <li>
+                    <Link  to="skills" smooth={true} duration={500}> Skills</Link>
+                </li>
+                <li>
+                    <Link  to="work" smooth={true} duration={500}> Work</Link>
+                </li>
+                <li>
+                    <Link  to="contact" smooth={true} duration={500}> Contact</Link>
+                </li>
             </ul> 
 
 
@@ -46,11 +57,21 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
          <ul className={!mobileMenu ? 'hidden' : style.mobileMenu }>
-                <li className={style.mobileLi}>Home</li>
-                <li className={style.mobileLi}>About</li>
-                <li className={style.mobileLi}>Skills</li>
-                <li className={style.mobileLi}>Works</li>
-                <li className={style.mobileLi}>Contact</li>
+                <li className={style.mobileLi}>
+                    <Link onClick={handleClick} to="home" smooth={true} duration={500}> Home</Link>
+                </li>
+                <li className={style.mobileLi}>
+                    <Link onClick={handleClick} to="about" smooth={true} duration={500}> About</Link>
+                </li>
+                <li className={style.mobileLi}>
+                    <Link onClick={handleClick} to="skills" smooth={true} duration={500}> Skills</Link>
+                </li>
+                <li className={style.mobileLi}>
+                    <Link onClick={handleClick} to="work" smooth={true} duration={500}> Work</Link>
+                </li>
+                <li className={style.mobileLi}>
+                    <Link onClick={handleClick} to="contact" smooth={true} duration={500}> Contact</Link>
+                </li>
             </ul>
 
         {/* Social Icons */}
