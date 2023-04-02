@@ -3,7 +3,7 @@ import workImg from '../assets/projects/workImg.jpeg'
 import realEstate from '../assets/projects/realestate.jpg'
 
 const style = {
-    work: `w-full md:h-screen text-gray-300 bg-[#0a192f]`,
+    work: `w-full text-gray-300 bg-[#0a192f]`,
     parentContainer: `max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full p-4`,
     workTxt: `text-4xl font-bold inline border-b-4 border-blue-500`,
     cardCont: `grid sm:grid-cols-2 md:grid-cols-3 gap-4`,

@@ -1,43 +1,64 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Link } from 'react-scroll'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import Name from './Name'
+import MyImage from '../assets/akandegbolahan.png'
 
 const style = {
-    home: `bg-[#0a192f] w-full h-screen`,
+    home: `bg-[#0a192f] w-full h-screen  `,
     homeCont: `max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full`,
+    gridCont: `w-full grid grid-rows-[1fr_0.5fr] lg:grid-rows-none lg:grid-cols-[3fr_1fr] gap-2 text-center  `,
+    gridTextCont: `  lg:block flex flex-col justify-center items-center`,
     homeContH1: `text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-300`,
     homeContH2: `text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-500`,
-    homeButtonCont: `flex`,
+    homeButtonCont: `flex justify-center`,
     homeButton : `border-2 group text-gray-200 px-4 py-2 mt-2 rounded-md text-md font-bold hover:border-0 hover:bg-[#64ffda] hover:text-gray-900 transition duration-300 ease-in-out flex items-center ml-4`,
     homeButtonCV : `lg:hidden border-2 group text-gray-200 px-4 py-2 mt-2 rounded-md text-md font-bold hover:border-0 hover:bg-[#64ffda] hover:text-gray-900 transition duration-300 ease-in-out flex items-center ml-4`,
-    arrow: `group-hover:rotate-90 duration-300` 
+    arrow: `group-hover:rotate-90 duration-300`,
+    imgDivCont: `w-full h-full`,
+    // imgDiv: `lg:border boder-red-500  lg:rounded-lg `,
+    img: ` w-10/12 h-10/12 border rounded-full lg:w-60 h-60 md:w-50 mx-auto p-2 ` 
 }
 
 const Home = () => {
+  const [showWork, setShowWork] = useState(false)
+    const handleClick = () => setShowWork(!showWork)
   return (
     <div name='home' className={style.home}>
     
     {/* Container */}
     <div className={style.homeCont}>
-        <p className='text-blue-500'>Hi, My name is</p>
-        <h1 className={style.homeContH1}>Akande Gbolahan</h1>
-        <h2 className={style.homeContH2}>{<Name/>}</h2>
-        <div className={style.homeButtonCont}>
-          <div>
-              <button className={style.homeButton}>View Work 
-              <span className={style.arrow}>
-              <HiArrowNarrowRight className='ml-3'/>
-              </span>
-              </button>
-          </div>
-          <div>
-              <button className={style.homeButtonCV}>Download CV 
-              <span className={style.arrow}>
-              <HiArrowNarrowRight className='ml-3'/>
-              </span>
-              </button>
+      <div className={style.gridCont}>
+        <div className={style.gridTextCont}>
+          <p className='text-blue-500'>Hi, My name is</p>
+          <h1 className={style.homeContH1}>Akande Gbolahan</h1>
+          <h2 className={style.homeContH2}>{<Name/>}</h2>
+          {/* Button Container  */}
+          <div className={style.homeButtonCont}>
+            <div>
+                <button className={style.homeButton}>
+                  <Link onClick={handleClick} to="work" smooth={true} duration={500}> View Work</Link> 
+                <span className={style.arrow}>
+                <HiArrowNarrowRight className='ml-3'/>
+                </span>
+                </button>
+            </div>
+            <div>
+                <button className={style.homeButtonCV}>Download CV 
+                <span className={style.arrow}>
+                <HiArrowNarrowRight className='ml-3'/>
+                </span>
+                </button>
+            </div>
           </div>
         </div>
+        {/* Image Cont  */}
+        <div className={style.imgDivCont}>
+          <div className={style.imgDiv}>
+            <img src={MyImage} className={style.img} alt="my_image" />
+          </div>
+        </div>
+      </div>
     </div>
 
 

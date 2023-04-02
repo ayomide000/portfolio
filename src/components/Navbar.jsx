@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className={style.nav}>
         <div>
-            <h2 className={style.logo}>AG</h2>
+            <h2 className={style.logo}>Akande Gbolahan</h2>
         </div>
         
         {/* menu */}
