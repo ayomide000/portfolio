@@ -3,6 +3,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
+import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
     nav: `fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300`,
@@ -78,22 +79,22 @@ const Navbar = () => {
         <div className={style.socials}>
             <ul>
                 <li className={style.socialsLiLinkedIn}>
-                    <a className={style.socialsLink} href="/">
+                    <a className={style.socialsLink} href="/" target='_blank'>
                         LinkedIn <FaLinkedin size={30}/>
                     </a>
                 </li>
                 <li className={style.socialsLiGithub}>
-                    <a className={style.socialsLink} href="/">
+                    <a className={style.socialsLink} href="/" target='_blank'>
                         Github <FaGithub size={30}/>
                     </a>
                 </li>
                 <li className={style.socialsLiEmail}>
-                    <a className={style.socialsLink} href="/">
+                    <a className={style.socialsLink} href="/" target='_blank'>
                         Email <HiOutlineMail size={30}/>
                     </a>
                 </li>
                 <li className={style.socialsLiResume}>
-                    <a className={style.socialsLink} href="/">
+                    <a className={style.socialsLink} href={CV} download>
                         Resume <BsFillPersonLinesFill size={30}/>
                     </a>
                 </li>

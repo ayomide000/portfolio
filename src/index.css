@@ -13,6 +13,9 @@
     @apply cursor-pointer;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .blinking-cursor:after {
   content: "|";
