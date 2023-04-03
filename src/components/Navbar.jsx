@@ -1,4 +1,4 @@
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
+import {FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useState } from 'react'
@@ -10,11 +10,12 @@ const style = {
     logo: `text-2xl  sm:text-4xl text-blue-500 font-bold`,
     menu: `hidden md:flex`,
     hamburger: `md:hidden z-10`,
-    mobileMenu: `absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center `,
+    mobileMenu: `absolute z-5 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center `,
     mobileLi: `py-6 text-4xl`,
     socials: `hidden lg:flex fixed flex-col top-[35%] left-0`,
-    socialsLiLinkedIn: `w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600`,
+    socialsLiLinkedIn: `w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-900`,
     socialsLiGithub: `w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]`,
+    socialsLiTwitter: `w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500`,
     socialsLiEmail: `w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]0`,
     socialsLiResume: `w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]`,
     socialsLink: `flex justify-between items-center w-full text-gray-300 `
@@ -79,17 +80,22 @@ const Navbar = () => {
         <div className={style.socials}>
             <ul>
                 <li className={style.socialsLiLinkedIn}>
-                    <a className={style.socialsLink} href="/" target='_blank'>
+                    <a className={style.socialsLink} href="https://www.linkedin.com/in/gbolahan-akande-2a9860232" target='_blank'>
                         LinkedIn <FaLinkedin size={30}/>
                     </a>
                 </li>
                 <li className={style.socialsLiGithub}>
-                    <a className={style.socialsLink} href="/" target='_blank'>
+                    <a className={style.socialsLink} href="https://github.com/ayomide000" target='_blank'>
                         Github <FaGithub size={30}/>
                     </a>
                 </li>
+                <li className={style.socialsLiTwitter}>
+                    <a className={style.socialsLink} href="https://twitter.com/AkandeGbolaha11?t=MoE8xE9SQQoaGMpyGyxwug&s=09" target='_blank'>
+                        Twitter <FaTwitter size={30}/>
+                    </a>
+                </li>
                 <li className={style.socialsLiEmail}>
-                    <a className={style.socialsLink} href="/" target='_blank'>
+                    <a className={style.socialsLink} href="https://www.akandegbolahanayomide@gmail.com" target='_blank'>
                         Email <HiOutlineMail size={30}/>
                     </a>
                 </li>

@@ -12,16 +12,16 @@ const style = {
     gridTextCont: `  lg:block flex flex-col justify-center items-center`,
     welcomeCont: `flex justify-center`,
     welcome: `text-center font-bold text-3xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text`,
-    wave: `animate-wave text-3xl`,
+    wave: `animate-wave text-3xl text-blue-500`,
     homeContH1: `text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-300`,
     homeContH2: `text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-500`,
     homeButtonCont: `flex justify-center`,
     homeButton : `border-2 group text-gray-200 px-4 py-2 mt-2 rounded-md text-md font-bold hover:border-0 hover:bg-[#64ffda] hover:text-gray-900 transition duration-300 ease-in-out flex items-center ml-4`,
     homeButtonCV : `lg:hidden border-2 group text-gray-200 px-4 py-2 mt-2 rounded-md text-md font-bold hover:border-0 hover:bg-[#64ffda] hover:text-gray-900 transition duration-300 ease-in-out flex items-center ml-4`,
     arrow: `group-hover:rotate-90 duration-300`,
-    imgDivCont: `w-full h-full`,
-    // imgDiv: `lg:border boder-red-500  lg:rounded-lg `,
-    img: ` w-10/12 h-10/12 border rounded-lg lg:rounded-full lg:w-60 h-60 md:w-50 mx-auto px-0 bg-gray-700 ` 
+    imgDivCont: `w-full h-full `,
+    imgDiv: `bg-gradient-to-l from-transparent to-gray-600  grid place-items-center rounded-lg lg:rounded-full`,
+    img: ` w-full aspect-square  lg:rounded-full lg:w-60 h-60 md:w-50 mx-auto px-0  ` 
 }
 
 const Home = () => {

@@ -26,7 +26,7 @@ const About = () => {
                        <p>Hi, I'm Gbolahan, nice to meet you. Please take a look around.</p> 
                     </div>
                     <div>
-                        <p>I am passionate about building excellent and giving life to web applications. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat similique impedit enim eum quibusdam in voluptatibus corrupti perspiciatis tempora fuga.</p>
+                        <p>I am passionate about building excellent and giving life to web applications. I love exploring new technologies, I like to stay on top of latest trends. I  write clean and readable codes.</p>
                     </div>
                 </div>
            
