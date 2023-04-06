@@ -7,11 +7,11 @@ import todoApp from '../assets/projects/todoApp.png'
 import formValidation from '../assets/projects/formValidation.png'
 
 const style = {
-    work: `w-full text-gray-300 bg-[#0a192f]`,
+    work: `w-full text-gray-300 bg-[#0a192f] z-5 relative`,
     parentContainer: `max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full p-4`,
     workTxt: `text-4xl font-bold inline border-b-4 border-blue-500`,
     cardCont: `grid sm:grid-cols-2 md:grid-cols-3 gap-4 `,
-    cardItem: `shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div transition duration-200 ease-in-out`,
+    cardItem: `shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div transition duration-200 ease-in-out z-1`,
     hover: `opacity-0  group-hover:opacity-100`,
     hoverTxt: `text-2xl font-bold text-white tracking-wider text-center mx-auto`,
     hoverButton: `text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:text-white hover:bg-gray-700 transition duration-300 ease-in`
@@ -28,7 +28,7 @@ const Work = () => {
 
             <div className={style.cardCont}>
                 {/* Color Generator  */}
-                <div style={{backgroundImage: `url(${colorGenerator})`}} className={style.cardItem}>
+                <div style={{backgroundImage: `url(${colorGenerator})`}} className={style.cardItem} data-aos="zoom-in" data-aos-offset="10">
 
                     {/* Hover Effects    */}
                     <div className={style.hover}>
@@ -47,7 +47,7 @@ const Work = () => {
                     </div>
                 </div>
                 {/* Vue Counter  */}
-                <div style={{backgroundImage: `url(${vueCounter})`}} className={style.cardItem}>
+                <div style={{backgroundImage: `url(${vueCounter})`}} className={style.cardItem} data-aos="zoom-in" data-aos-offset="10">
 
                     {/* Hover Effects    */}
                     <div className={style.hover}>
@@ -66,7 +66,7 @@ const Work = () => {
                     </div>
                 </div>
                 {/* Birthday Reminder  */}
-                <div style={{backgroundImage: `url(${birthdayReminder})`}} className={style.cardItem}>
+                <div style={{backgroundImage: `url(${birthdayReminder})`}} className={style.cardItem} data-aos="zoom-in" data-aos-offset="10">
 
                     {/* Hover Effects    */}
                     <div className={style.hover}>
@@ -85,7 +85,7 @@ const Work = () => {
                     </div>
                 </div>
                 {/* Todo App  */}
-                <div style={{backgroundImage: `url(${todoApp})`}} className={style.cardItem}>
+                <div style={{backgroundImage: `url(${todoApp})`}} className={style.cardItem} data-aos="zoom-out" data-offset="10">
 
                     {/* Hover Effects    */}
                     <div className={style.hover}>
@@ -104,7 +104,7 @@ const Work = () => {
                     </div>
                 </div>
                 {/* React Counter  */}
-                <div style={{backgroundImage: `url(${reactCounter})`}} className={style.cardItem}>
+                <div style={{backgroundImage: `url(${reactCounter})`}} className={style.cardItem} data-aos="zoom-out" data-offset="10">
 
                     {/* Hover Effects    */}
                     <div className={style.hover}>
@@ -123,7 +123,7 @@ const Work = () => {
                     </div>
                 </div>
                 {/* Form Validation  */}
-                <div style={{backgroundImage: `url(${formValidation})`}} className={style.cardItem}>
+                <div style={{backgroundImage: `url(${formValidation})`}} className={style.cardItem} data-aos="zoom-out" data-offset="10">
 
                     {/* Hover Effects    */}
                     <div className={style.hover}>

@@ -10,11 +10,11 @@ import Tailwind from '../assets/tailwind.png'
 import Firebase from '../assets/firebase.png'
 
 const style = {
-    skills: `w-full h-screen bg-[#0a192f] text-gray-300 -z-50 relative`,
-    parentContainer: `max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full `,
+    skills: `w-full lg:h-screen bg-[#0a192f] text-gray-300 z-5 relative`,
+    parentContainer: `max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full`,
     parentContainerExp: `text-4xl font-bold inline border-b-4 border-blue-500`,
     imgContainer: `w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8`,
-    imgDiv: `shadow-md shadow-[#040c16] hover:scale-110 duration-500`,
+    imgDiv: `shadow-md shadow-[#040c16] hover:scale-110 duration-500 z-1`,
     img: `w-20 mx-auto`
 }
 
@@ -29,7 +29,7 @@ const Skills = () => {
             </div>
 
             <div className={style.imgContainer} >
-                <div className={style.imgDiv} data-aos="flip-left" data-aos-offset="10">
+                <div className={style.imgDiv} data-aos="flip-left" data-offset="10">
                     <img className={style.img} src={HTML} alt="HTML icon" />
                     <p className='my-4'>HTML</p>
                 </div>

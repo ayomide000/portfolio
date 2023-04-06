@@ -6,7 +6,7 @@ import MyImage from '../assets/akandegbolahan.png'
 import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
-    home: `bg-[#0a192f] w-full h-screen  `,
+    home: `bg-[#0a192f] w-full h-screen -z-5 relative`,
     homeCont: `max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full`,
     gridCont: `w-full grid grid-rows-[1fr_0.5fr] lg:grid-rows-none lg:grid-cols-[3fr_1fr] gap-2 text-center  `,
     gridTextCont: `  lg:block flex flex-col justify-center items-center`,

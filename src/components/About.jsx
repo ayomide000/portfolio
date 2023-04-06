@@ -13,9 +13,10 @@ const style = {
 
 const About = () => {
     useEffect(() => {
-    Aos.init({ duration: 2000,
-    // delay: 100,
- })
+    Aos.init({ 
+        duration: 1500,
+        easing: 'ease-in-out'
+    })
   }, [])
   return (
     <div name='about' className={style.about}>
