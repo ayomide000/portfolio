@@ -7,8 +7,9 @@ import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
     nav: `fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300`,
-    logo: `text-2xl  sm:text-4xl text-blue-500 font-bold`,
-    menu: `hidden md:flex`,
+    logo: `text-2xl  sm:text-4xl text-blue-500 font-bold italic`,
+    menu: `hidden md:flex `,
+    menuLink: `px-3  py-2 hover:bg-blue-500 transition duration-300 ease-in rounded-lg`,
     hamburger: `md:hidden z-10`,
     mobileMenu: `absolute z-5 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center `,
     mobileLi: `py-6 text-4xl`,
@@ -34,19 +35,19 @@ const Navbar = () => {
         
         {/* menu */}
             <ul className={style.menu}>
-                <li>
+                <li className={style.menuLink}>
                     <Link  to="home" smooth={true} duration={500}> Home</Link>
                 </li>
-                <li>
+                <li className={style.menuLink}>
                     <Link  to="about" smooth={true} duration={500}> About</Link>
                 </li>
-                <li>
+                <li className={style.menuLink}>
                     <Link  to="skills" smooth={true} duration={500}> Skills</Link>
                 </li>
-                <li>
+                <li className={style.menuLink}>
                     <Link  to="work" smooth={true} duration={500}> Work</Link>
                 </li>
-                <li>
+                <li className={style.menuLink}>
                     <Link  to="contact" smooth={true} duration={500}> Contact</Link>
                 </li>
             </ul> 

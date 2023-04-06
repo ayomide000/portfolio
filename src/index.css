@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.aos-fix[data-aos][data-aos].aos-animate {
+    transform: unset;
+}
+
 .blinking-cursor:after {
   content: "|";
   animation: blink 1s step-start infinite;

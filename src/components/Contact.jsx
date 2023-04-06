@@ -7,7 +7,7 @@ const style = {
     name: `bg-[#ccd6f6] p-2`,
     email: `my-4 p-2 bg-[#ccd6f6] focus:outline-none`,
     textarea: `bg-[#ccd6f6] p-2 text-gray-700`,
-    btn: `text-white border-2 rounded-md hover:bg-blue-500 hover:border-blue-500 px-4 py-3 my-8 mx-auto flex items-center`
+    btn: `text-white border-2 rounded-md hover:bg-blue-500 hover:border-blue-500 px-4 py-3 my-8 mx-auto flex items-center transition duration-300 ease-in`
 }
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
         <form method='POST' action="https://getform.io/f/79f87687-5e74-4448-9c3c-55a0d4c123b8" className={style.form}>
             <div className='pb-8'>
                 <p className={style.contactHead}>Contact</p>
-                <p className='py-4'>Submit the form below or shoot me an email - myemail@gmail.com</p>
+                <p className='py-4'>Submit the form below or shoot me an email - akandegbolahanayomide@gmail.com</p>
             </div>
             <input className={style.name} type="text" placeholder='Name' name='name' />
             <input className={style.email} type="email" placeholder='Email' name='email' />

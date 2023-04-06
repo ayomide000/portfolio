@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const style = {
-    about: `w-full h-screen bg-[#0a192f] text-gray-300`,
+    about: `w-full z-1 h-screen bg-[#0a192f] text-gray-300 -z-50 relative`,
     aboutCont: `flex flex-col justify-center items-center w-full h-full`,
     parentDivCont: `max-w-[1000px] w-full  grid grid-cols-2 gap-8`,
     aboutContText: `max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-4`,
@@ -10,6 +12,11 @@ const style = {
 }
 
 const About = () => {
+    useEffect(() => {
+    Aos.init({ duration: 2000,
+    // delay: 100,
+ })
+  }, [])
   return (
     <div name='about' className={style.about}>
         <div className={style.aboutCont}>
@@ -23,10 +30,10 @@ const About = () => {
                 <div className={style.aboutContText}>
                     <div className='sm:text-right 
                      text-4xl font-bold'>
-                       <p>Hi, I'm Gbolahan, nice to meet you. Please take a look around.</p> 
+                       <p className='z-2' style={{position: "relative"}} data-aos="fade-left" data-offset="10">Hi, I'm Gbolahan, nice to meet you. Please take a look around.</p> 
                     </div>
                     <div>
-                        <p>I am passionate about building excellent and giving life to web applications. I love exploring new technologies, I like to stay on top of latest trends. I  write clean and readable codes.</p>
+                        <p data-aos="fade-right" data-offset="10">I am passionate about building excellent and giving life to web applications. I love exploring new technologies, I like to stay on top of latest trends. I  write clean and readable codes.</p>
                     </div>
                 </div>
            
