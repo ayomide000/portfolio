@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-scroll'
 import {HiArrowNarrowRight} from 'react-icons/hi'
-import Name from './Name'
+import Profession from './Profession'
 import MyImage from '../assets/akandegbolahan.png'
 import CV from '../assets/Akande Gbolahan (resume).pdf'
 
@@ -39,8 +39,8 @@ const Home = () => {
             <div className={style.wave}>👋</div>
          </div>
           <p className='text-blue-500'>Hi, My name is</p>
-          <h1 className={style.homeContH1}>Akande Gbolahan</h1>
-          <h2 className={style.homeContH2}>{<Name/>}</h2>
+          <h1 className={style.homeContH1}>Akande Gbolahan Ayomide</h1>
+          <h2 className={style.homeContH2}>{<Profession/>}</h2>
           {/* Button Container  */}
           <div className={style.homeButtonCont}>
             <div>

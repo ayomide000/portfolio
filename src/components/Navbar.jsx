@@ -6,11 +6,11 @@ import { Link } from 'react-scroll'
 import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
-    nav: `fixed top-0 z-50 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300`,
-    logo: `text-2xl  sm:text-4xl text-blue-500 font-bold italic`,
+    nav: `fixed top-0 z-50 w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300`,
+    logo: `text-md  sm:text-4xl text-blue-500 font-bold italic`,
     menu: `hidden md:flex `,
     menuLink: `px-3  py-2 hover:bg-blue-500 transition duration-300 ease-in rounded-lg`,
-    hamburger: `md:hidden z-50`,
+    hamburger: `absolute right-5 z-100 md:hidden bg-red-800`,
     mobileMenu: `absolute z-5 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center `,
     mobileLi: `py-6 text-4xl`,
     socials: `hidden lg:flex fixed flex-col top-[35%] left-0`,
@@ -29,8 +29,9 @@ const Navbar = () => {
 
   return (
     <div className={style.nav}>
+        {/* LOGO  */}
         <div>
-            <h2 className={style.logo}>Akande Gbolahan</h2>
+            <h2 className={style.logo}>Akande</h2>
         </div>
         
         {/* menu */}

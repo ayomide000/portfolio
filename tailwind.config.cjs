@@ -24,6 +24,11 @@ module.exports = {
         wave: "wave 1.5s infinite",
         // count: "count 1.5s ease-in",
       },
+      screens: {
+        xs: {
+          max: "520px",
+        },
+      },
     },
   },
   plugins: [],
