@@ -17,8 +17,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.hamburger {
+  overflow: hidden;
+  position: fixed;
+  left: 78%;
+}
+
 .aos-fix[data-aos][data-aos].aos-animate {
-    transform: unset;
+  transform: unset;
 }
 
 .blinking-cursor:after {

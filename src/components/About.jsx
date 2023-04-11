@@ -15,7 +15,8 @@ const About = () => {
     useEffect(() => {
     Aos.init({ 
         duration: 1500,
-        easing: 'ease-in-out'
+        easing: 'ease-in-out',
+        offset: 0
     })
   }, [])
   return (

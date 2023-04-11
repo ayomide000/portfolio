@@ -14,11 +14,6 @@ module.exports = {
           "70%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
         },
-        // count: {
-        //   "0%": { transform: "scale(1)" },
-        //   "50%": { transform: "scale(1.5)" },
-        //   "100%": { transform: "scale(1)" },
-        // },
       },
       animation: {
         wave: "wave 1.5s infinite",
@@ -26,10 +21,13 @@ module.exports = {
       },
       screens: {
         xs: {
-          max: "520px",
+          max: "400px",
+        },
+        xxs: {
+          max: "380px",
         },
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
