@@ -6,8 +6,8 @@ import MyImage from '../assets/akandegbolahan.png'
 import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
-  home: `bg-[#0a192f] w-full h-screen`,
-  homeCont: `max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full`,
+  home: `bg-[#0a192f] w-full h-screen xxs:w-screen xxs:h-[100vh] xxs:overflow-hidden sxs:w-screen sxs:h-[100vh] sxs:overflow-hidden`,
+  homeCont: `max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full w-full`,
   gridCont: `w-full grid grid-rows-[1fr_0.5fr] lg:grid-rows-none lg:grid-cols-[3fr_1fr] gap-2 text-center  `,
   gridTextCont: `  lg:block flex flex-col justify-center items-center`,
   welcomeCont: `flex justify-center`,
