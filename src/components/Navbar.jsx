@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
-    nav: `fixed top-0 z-50 w-[95%] md:w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 sxs:w-full`,
+    nav: `fixed top-0 z-50 w-full md:w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 sxs:w-full xxs:w-full`,
     logo: `text-md  sm:text-4xl text-blue-500 font-bold italic sxs:text-xs`,
     menu: `hidden md:flex `,
     menuLink: `px-3  py-2 hover:bg-blue-500 transition duration-300 ease-in rounded-lg`,

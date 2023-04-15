@@ -7,6 +7,7 @@
 @layer base {
   body {
     @apply font-[Raleway];
+    overflow-x: hidden;
   }
   li {
     @apply px-4;
@@ -15,12 +16,13 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .hamburger {
-  overflow: hidden;
-  position: fixed;
-  left: 78%;
+  overflow-x: hidden;
+  /* position: fixed; */
+  /* left: 78%; */
 }
 
 .aos-fix[data-aos][data-aos].aos-animate {
