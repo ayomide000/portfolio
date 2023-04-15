@@ -7,6 +7,7 @@ import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import Skills from "./components/Skills"
 import Work from "./components/Work"
+// import SharedLayout from "./components/SharedLayout"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Work/>
         <Contact/>
         <Footer/>
+        {/* <SharedLayout/> */}
 
     {/* <Routes>
       <Route path="layout" element={<Layout/>}>
