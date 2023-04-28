@@ -3,6 +3,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
+// import CV from '../assets/Akande_Gbolahan_Ayomide_resume.pdf'
 import CV from '../assets/Akande Gbolahan (resume).pdf'
 
 const style = {
